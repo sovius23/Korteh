@@ -7,6 +7,7 @@ YandexMap::setApiMAp();
 
     <body>
     <?php YandexMap::setMap(); ?>
+
     </body>
 
 <?php
