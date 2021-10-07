@@ -1,0 +1,28 @@
+@font-face {
+  font-family: centuryGothic;
+  src: url("../fonts/CenturyGothic.woff");
+}
+
+@font-face {
+  font-family: centuryGothic;
+  src: url("../fonts/CenturyGothic-Bold.woff");
+  font-weight: bold;
+}
+
+/* MDN defined 600 as semi-bold */
+@font-face {
+  font-family: myriadProCond;
+  src: url("../fonts/MYRIADPRO-SEMIBOLD.woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: myriadProCond;
+  src: url("../fonts/MYRIADPRO-BOLDCOND.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: myriadProIt;
+  src: url("../fonts/myriadpro-it.woff");
+}

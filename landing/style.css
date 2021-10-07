@@ -1,0 +1,84 @@
+@import url("./fonts.css");
+:root {
+  /* Fonts names variables wrapper. */
+  --century-gothic: centuryGothic, sans-serif;
+  --myriad-pro-cond: myriadProCond, Helvetica, Georgia;
+  --myriad-pro-it: myriadProIt, Helvetica, sans-serif;
+  --primary-blue: #2c4b77;
+  --secondary-blue: #0f3642;
+}
+
+
+*{
+    max-width: 100%;
+    
+    box-sizing:border-box;
+    margin:0 auto 0;
+    font-weight:400;
+    font-size: 1vw;
+    line-height:1.5;
+}
+
+#page-container{
+    background-color: aqua;
+    background-image: url("img/glavnayaBIG.jpg");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: cover;
+}
+main{
+    padding-top:28vh;
+}
+#head-container{
+    display:flex;
+    flex-direction: column;
+   
+}
+#head-container h1{
+    font-family: var(--myriad-pro-cond);
+    font-size:7.1vw;
+    font-weight: 900;
+    color: rgb(44,75,119);
+    Line-height:0.55;
+    text-transform: uppercase;
+    text-align: center;
+}
+#head-container-text{
+    width: 30%;
+    font-family: var(--century-gothic);
+}
+#head-container-text strong{
+    text-transform: uppercase;
+    
+}
+
+#head-container h2{
+    margin-top:2.8vh;
+    font-size:1vw;
+    text-transform: lowercase;
+    text-align: center;
+}
+#head-container p{
+    margin-top:6.9vh;
+    text-align: center;
+}
+
+#links-container{
+    margin-top:16vh;
+    display:flex;
+    width: 50%;
+    /*justify-content: space-between;*/
+}
+
+#links-container a{
+    color: black;
+  padding: 1.1vh;
+  border-radius: 0.57vh;
+  -webkit-box-shadow: 0px 0px 18px -2px rgba(34, 60, 80, 0.2) inset;
+  -moz-box-shadow: 0px 0px 18px -2px rgba(34, 60, 80, 0.2) inset;
+  box-shadow: 0px 0px 18px -2px rgba(34, 60, 80, 0.2) inset;
+}
+#experience-container{
+    margin-top:18vh;
+}
+
