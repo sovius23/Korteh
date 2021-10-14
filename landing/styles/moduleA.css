@@ -1,0 +1,443 @@
+@import url("fonts.css");
+@import url("normilize.css");
+
+:root {
+  /* Fonts names variables wrapper. */
+  --century-gothic: centuryGothic, sans-serif;
+  --primary-blue: #2c4b77;
+  --secondary-blue: #0f3642;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+    max-width: 1440px;
+    margin:0 auto 0;
+}
+
+body {
+  background-image: url("../img/ModA/ModABIGMain.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Styled Descktop first */
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo__company-name {
+  font-family: var(--myriad-pro-cond);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 120px;
+  line-height: 0.8em;
+  margin: 60px 0 0 0;
+  align-self: center;
+  color: var(--primary-blue);
+}
+
+.logo__company-surname {
+  font-family: var(--century-gothic);
+  font-weight: normal;
+  align-self: center;
+  color: var(--secondary-blue);
+  margin:10px 0 0;
+    font-size:19px;
+}
+
+.to-main {
+  padding-top: 100px;
+  width: 20%;
+  margin: auto;
+    
+    
+}
+
+.to-main a {
+    display:block;
+    text-align: center;
+  background-image: url(../img/ArrowUp.png);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    padding-top:25px;
+    text-decoration: none;
+    text-transform: lowercase;
+    color:black;
+    font-family: var(--century-gothic);
+    transition: all linear 0.2s;
+}
+.to-main a:hover {
+    padding:25px 10px 10px;
+  border-radius: 16px;
+  -webkit-box-shadow:0 0  18px -2px rgba(34, 60, 80, 0.2) inset;
+  -moz-box-shadow:0 0  18px -2px rgba(34, 60, 80, 0.2) inset;
+  box-shadow:0 0  18px -2px rgba(34, 60, 80, 0.2) inset;
+    
+    
+}
+
+.to-main__text {
+  text-transform: lowercase;
+  color: black;
+  font-family: var(--century-gothic);
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  font-family: var(--century-gothic);
+  padding: 16px;
+}
+
+.main-info h3,
+.main-info h4 {
+  color: #2c4b77;
+}
+
+.main-info__module-name {
+    margin-top:65px;
+  font-weight: normal;
+}
+.main-info__heading{
+    margin-top:30px;
+    font-size:20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.main-info__module-highlight {
+  font-weight: bold;
+}
+
+.main-info__branch-list,
+.main-info__functions {
+    margin-top: 35px;
+    
+  list-style: none;
+  max-width: 70ch;
+}
+.main-info__func-items{
+    margin-bottom: 23px;
+}
+
+.main-info__branch-item::before,
+.main-info__func-items::before {
+  content: "- ";
+}
+
+.main-info__desc {
+    margin-top:34px;
+  max-width: 65ch;
+    text-indent: 1.5em;
+}
+
+.important-notice {
+    margin-top:23px;
+  width:60%;
+  text-align: center;
+  padding: 16px;
+  color: white;
+  background-color: #4497bc;
+  border-radius: 32px;
+  font-weight: bold;
+}
+
+.principles {
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principles__heading {
+  font-family: var(--century-gothic);
+  font-size: 32px;
+  margin: 0;
+}
+
+.principles__strong-five {
+  font-size: 48px;
+  color: #4497bc;
+}
+
+.principles__list {
+    width: 80%;
+    margin-top:15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  border: 10px #3b7789 solid;
+  border-radius: 16px;
+  font-family: var(--century-gothic);
+  font-weight: bold;
+}
+
+.principles__item {
+    width:18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principles__icon {
+  width: 50px;
+    height: 50px;
+}
+
+.principles__principle__name {
+  max-width: 25ch;
+    text-align:center;
+}
+
+.possibilities {
+  padding-top: 64px;
+  font-family: var(--century-gothic);
+  font-weight: bold;
+  background-image: url(../img/ModA/ModABicycle.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+    background-position: 50% 600%;
+}
+
+.possibilities__heading {
+  color: #2c4b77;
+  max-width: 60ch;
+  width: fit-content;
+  margin: 0 auto 70px 8%;
+  font-size: 20px;
+}
+
+.possibilities__list {
+    margin:0;
+  display: grid;
+  list-style: none;
+  grid-template-columns: auto auto;
+  max-width: 70%;
+  padding: 16px;
+  justify-items: center;
+  background-size: contain;
+}
+
+.possibility__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 45ch;
+}
+
+.possibility__item:nth-child(1) {
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+}
+
+.possibility__item:nth-child(4) {
+  grid-row: 3 / 4;
+  grid-column: 1 / 3;
+}
+
+.possibility__heading {
+  text-transform: uppercase;
+    text-align:left;
+    
+  font-size: 16px;
+  color: #4497bc;
+  margin: 10px auto 0 0;
+}
+.external-circle, .inner-circle{
+    margin:0 auto 0;
+    border:1px solid rgb(23,153,193);
+    border-radius: 50%;
+    padding:20px;
+}
+.inner-circle img{
+    height:55px;
+    width: 55px;
+    box-sizing: content-box;
+}
+
+.possibility__desc{
+    margin-bottom: 10px;
+    text-indent: 1.5em;
+}
+
+.consultation {
+  width: 20%;
+  margin: auto;
+  height: 32px;
+  padding: 16px;
+  box-sizing: content-box;
+  gap: 16px;
+  align-items: center;
+  border-radius: 16px;
+  -webkit-box-shadow:0 0  18px -2px rgba(34, 60, 80, 0.2) inset;
+  -moz-box-shadow:0 0  18px -2px rgba(34, 60, 80, 0.2) inset;
+  box-shadow:0 0  18px -2px rgba(34, 60, 80, 0.2) inset;
+    transition: all linear 0.2s;
+}
+.consultation:hover{
+    background-color: rgb(23,153,193);
+    
+}
+.consultation__link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.consultation__text {
+  font-family: var(--century-gothic);
+  max-width: 19ch;
+  text-transform: lowercase;
+  text-align: center;
+    font-size:20px;
+    transition: all linear 0.2s;
+}
+.consultation__text:hover{
+    color:white;
+}
+
+.consultation img {
+  height: 45px;
+    width: 45px;
+}
+
+.small-footer {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    rgba(63, 169, 245, 1) 0%,
+    rgba(0, 93, 129, 1) 100%
+  );
+  color: white;
+  padding: 16px 0;
+}
+
+.small-footer__item {
+  font-family: var(--century-gothic);
+  margin: 0;
+  font-size: 20px;
+  padding: 0 16px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .possibilities__heading {
+    margin: auto;
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  .possibilities {
+    background: none;
+  }
+
+  .possibilities__list {
+    max-width: 100%;
+  }
+
+  .possibility__heading {
+    font-size: 16px;
+  }
+
+  .possibility__desc {
+    font-size: 14px;
+  }
+
+  .principles__list {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .logo__company-name {
+    font-size: 128px;
+  }
+
+  .main-info__module-name,
+  .main-info__heading {
+    font-size: 16px;
+  }
+
+  .main-info__branch-list,
+  .main-info__func-items,
+  .main-info__desc {
+    font-size: 14px;
+  }
+
+  .small-footer__item {
+    font-size: 16px;
+  }
+    .principles__list{
+        display: flex;
+        flex-direction: column;
+    }
+    .principles__item{
+        width: 90%;
+    }
+    .principles__principle__name{
+        max-width: 100%;
+    }
+    .possibilities__heading{
+        text-align: center;
+    }
+    .possibility__heading{
+        margin:5px auto 5px;
+        text-align: center;
+    }
+    .consultation{
+        width:50%;
+    }
+    .main-info__desc{
+        margin:34px auto 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+  /* Background breaking at some point.
+  I think it's better to turn it off since there in not much of it */
+  body {
+   background: none;
+  }
+    .to-main{
+        padding-top: 20px;
+    }
+
+  .logo__company-name {
+    font-size: 64px;
+  }
+
+  .possibilities__list {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .logo__company-surname {
+    font-size: 14px;
+  }
+
+  .principles__heading {
+    font-size: 22px;
+  }
+
+  .small-footer__item {
+    font-size: 14px;
+  }
+}
